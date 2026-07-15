@@ -1,4 +1,3 @@
-[README.md](https://github.com/user-attachments/files/30028057/README.md)
 <!-- SCREENSTEREO_V1_0_1_RELEASE_IDENTITY_START -->
 > **Release:** ScreenStereo v1.0.1  
 > **License:** GPL-3.0-or-later  

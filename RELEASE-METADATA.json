@@ -1,0 +1,40 @@
+{
+  "schema_version": 1,
+  "product_name": "ScreenStereo",
+  "package_name": "stereoscreen",
+  "version": "1.0.1",
+  "release_tag": "v1.0.1",
+  "release_channel": "public",
+  "release_classification": "sterile_public_release",
+  "license": "GPL-3.0-or-later",
+  "copyright": "Copyright (C) 2026 Andrew Gold",
+  "lineage": {
+    "follows_earlier_public_beta": true,
+    "earlier_public_beta_preserved": true
+  },
+  "principal_delta": {
+    "classification": "first_run_durable_map_boundary_correction",
+    "description": "After exact user confirmation, first-run invokes the durable display-map writer and blocks mode activation when durable map creation fails."
+  },
+  "runtime_state_policy": {
+    "current_only_surfaces": true,
+    "timestamped_result_directories": false
+  },
+  "validation_boundary": {
+    "static_public_package_validation": "PASS",
+    "isolated_clean_install_lifecycle": "PASS",
+    "controlled_live_mirror_audible": "WITHDRAWN_BY_USER",
+    "controlled_fault_injection_and_recovery": "NOT_RUN",
+    "withdrawn_or_not_run_may_be_marked_pass": false
+  },
+  "source_baseline": {
+    "file_count": 30,
+    "content_sha256": "f4fcfd785947c56b0e6f9630967e1b54bfb4fdff0c8ce74ef70972379c1ada4b",
+    "corrected_first_run_sha256": "ca3a603f8ea0dfa6ac2a2911db2bef8e42966e6dca6edde602792c6074c501d5"
+  },
+  "provenance": "Developed within Project Sentinel using evidence-first, refusal-first, authority-gated implementation practices.",
+  "publication": {
+    "github_publication_authorized": false,
+    "release_candidate_only": true
+  }
+}

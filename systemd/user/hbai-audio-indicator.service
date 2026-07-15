@@ -1,0 +1,13 @@
+[Unit]
+Description=ScreenStereo audio top-right status indicator
+After=graphical-session.target pipewire.service pipewire-pulse.service wireplumber.service hbai-audio-mode.service
+Wants=pipewire.service pipewire-pulse.service wireplumber.service hbai-audio-mode.service
+
+[Service]
+Type=simple
+ExecStart=%h/.local/bin/hbai_audio_indicator.py
+Restart=on-failure
+RestartSec=3
+
+[Install]
+WantedBy=default.target

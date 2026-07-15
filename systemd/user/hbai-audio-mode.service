@@ -1,0 +1,12 @@
+[Unit]
+Description=ScreenStereo audio mode selector
+After=pipewire.service pipewire-pulse.service wireplumber.service
+Wants=pipewire.service pipewire-pulse.service wireplumber.service
+
+[Service]
+Type=oneshot
+ExecStart=%h/.local/bin/hbai_audio_mode.sh apply
+RemainAfterExit=yes
+
+[Install]
+WantedBy=default.target
